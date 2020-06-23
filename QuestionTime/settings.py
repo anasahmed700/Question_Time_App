@@ -39,17 +39,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
-    'rest_framework',
+    'rest_framework',  # djangorestframework
     'rest_framework.authtoken',
 
-    'allauth',
+    'allauth',  # django-allauth
     'allauth.account',
     'allauth.socialaccount',
 
-    'rest_auth',
+    'rest_auth',  # django-rest_auth
     'rest_auth.registration',
 
-    'crispy_forms',
+    'crispy_forms',  # django-crispy_forms
 
     'users',
 ]
@@ -137,15 +137,20 @@ LOGOUT_REDIRECT = '/'
 
 STATIC_URL = '/static/'
 
+# custom user model 
 AUTH_USER_MODEL = 'users.CustomUser'
 
+# Django crispy_forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+# django.contrib.sites
 SITE_ID = 1
 
+# Django allauth
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_EMAIL_REQUIRED = (True)
 
+# Django rest-framework
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
