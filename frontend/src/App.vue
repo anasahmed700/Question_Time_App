@@ -17,7 +17,7 @@ export default {
 <style>
 
 * {
-            font-family: 'Playfair Display', serif;
-        }
+  font-family: 'Playfair Display', serif;
+}
 
 </style>
