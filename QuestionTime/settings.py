@@ -46,10 +46,12 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
-    'rest_auth',  # django-rest_auth
+    'rest_auth',  # django-rest-auth
     'rest_auth.registration',
 
-    'crispy_forms',  # django-crispy_forms
+    'crispy_forms',  # django-crispy-forms
+
+    'webpack_loader',  # django-webpack-loader
 
     'users',
     'questions'
@@ -162,4 +164,12 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 2
+}
+
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'dist/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'frontend', 'webpack-stats.json'),
+    }
 }
