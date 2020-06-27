@@ -129,7 +129,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-LOGIN_URL = 'accounts/login/'
+LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT = '/'
 LOGOUT_REDIRECT = '/'
 
