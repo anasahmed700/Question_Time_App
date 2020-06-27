@@ -1,6 +1,6 @@
 {% extends 'auth-layout.html' %}
 {% load crispy_forms_tags %}
-{% block content %}
+{% block auth %}
 <h3>Create your Question Time Account</h3>
 <div class="registration-form-container">
     <form method="POST">
@@ -8,5 +8,6 @@
         {{ form|crispy }}
         <button class="btn btn-sm btn-outline-primary" type="submit">Create Account</button> 
     </form>
+    <p>Or <a href="{% url 'login' %}">Login</a></p>
 </div>
 {% endblock %}
