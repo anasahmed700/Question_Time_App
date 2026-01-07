@@ -4,7 +4,7 @@ chardet==3.0.4
 confusable-homoglyphs==3.2.0
 defusedxml==0.6.0
 Django==4.2.26
-django-allauth==0.42.0
+django-allauth==65.13.0
 django-crispy-forms==1.9.1
 django-registration==3.1.2
 django-rest-auth==0.9.5
